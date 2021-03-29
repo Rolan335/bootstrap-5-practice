@@ -8,6 +8,10 @@ body{
     font-family: "Arial", sans-serif;
 }
 
+li{
+    list-style: none;
+}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -203,9 +207,37 @@ a{
 //contacts
 .contacts{
     &__link{
-        transition: .3s;
+        transition: 3s;
         &:hover{
             opacity: 0.7;
+        }
+    }
+    &__icon{
+        background-color: #1FD19F;
+        border-radius: 10px;
+    }
+}
+
+//form
+.form{
+    &__textarea{
+        resize: none;
+    }
+}
+
+//footer
+.footer{
+    background-color: #000;
+    color: #fff;
+    .social-links{
+        &__link{
+            background-color: #fff;
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            svg{
+                fill: #000;
+            }
         }
     }
 }
