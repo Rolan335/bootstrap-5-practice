@@ -174,3 +174,38 @@ a{
     }
     }
 }
+
+//services
+.services{
+    &__icon{
+        padding: 5px;
+        border-radius: 5px;
+        transition: all .3s;
+    }
+    &__col-content{
+        border: 1px solid #151515;
+        border-radius: 5px;
+        transition: all .3s;
+        &:hover{
+            transform: translateY(-10px);
+            border: none;
+            box-shadow: 0 2px 15px 5px rgba(0,0,0,0.5);
+            .services__icon{
+                background-color: #151515;
+                svg{
+                    fill: #fff;
+                }
+            }
+        }
+    }
+}
+
+//contacts
+.contacts{
+    &__link{
+        transition: .3s;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+}
