@@ -107,8 +107,70 @@ a{
 
 //carousel
 .carousel-indicators{
-    bottom: -80px;
+    bottom: -60px;
     li{
         background-color: #000000 !important;
+    }
+}
+
+//team
+.team{
+    padding-top: 50px;
+    .social{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 30px;
+        opacity: 0;
+        transition: .3s all;
+        &__link{
+            transition: .3s;
+            color: #151515;
+            margin: 0 3px;
+            padding-top: 4px;
+            border-radius: 4px;
+            width: 36px;
+            height: 36px;
+            display: inline-block;
+            background: rgba(255,255,255, 0.8);
+            &:hover{
+                background: #ffc451;
+            }
+        }
+    }
+    .member{
+        margin-bottom: 20px;
+        overflow: hidden;
+        border-radius: 5px;
+        box-shadow: 0 2px 15px 5px rgba(0,0,0,0.5);
+        max-height: 440px;
+        max-width: 280px;
+        &:hover{
+            .social{
+                opacity: 1;
+                bottom: 15px;
+            }
+        }
+    &__img{
+        position: relative;
+        overflow: hidden;
+        img{
+            max-height: 50%;
+        }
+    }
+    &__info{
+        padding: 25px 15px;
+    }
+    &__name{
+        font-weight: 700;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    &__occupation{
+        font-size: 14px;
+        font-style: italic;
+        line-height: 26px;
+        color: #777777;
+    }
     }
 }
